@@ -1,7 +1,8 @@
 from AllSort.BubbleSort import Bubble
 
 class factory:
-    def getSort(self, name):
+    @staticmethod
+    def getSort(name):
         if name.strip().lower() == "bubble":return Bubble()
         else:
             print(f"Unknown sorting : {name}")

@@ -10,8 +10,7 @@ except ValueError:
     print("Invalid input")
     exit(1)
 
-fact = factory()
-sorter = fact.getSort(input_sort)
+sorter = factory.getSort(input_sort)
 numbers = sorter.sort(numbers)
 
 print(numbers)

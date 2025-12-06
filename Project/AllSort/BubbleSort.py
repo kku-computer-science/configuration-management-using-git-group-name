@@ -1,4 +1,4 @@
-from .SortFactory import SortFact
+from .SortInterface import SortFact
 
 class Bubble(SortFact):
     def sort(self, data):

@@ -4,5 +4,5 @@ class factory:
     def getSort(self, name):
         if name.strip().lower() == "bubble":return Bubble()
         else:
-            print(f"Unknown sorting algorithm: {name}")
+            print(f"Unknown sorting : {name}")
             exit(1)

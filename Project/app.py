@@ -1,9 +1,13 @@
 import numpy as np
+import sys
 from factory import factory
 
-input_sort = input("Select(Quick or Bubble): ")
+sys.stderr.write("Select(Quick or Bubble): ")
+input_sort = sys.stdin.readline().strip()
 
-input_list = input("list of numbers: ")
+sys.stderr.write("list of numbers: ")
+input_list = sys.stdin.readline().strip()
+
 try:
     numbers = [np.double(x) for x in input_list.split()]
 except ValueError:
@@ -13,4 +17,7 @@ except ValueError:
 sorter = factory.getSort(input_sort)
 numbers = sorter.sort(numbers)
 
-print(numbers)
+string = ""
+for i in numbers:
+    string += "{} ".format(i)
+print(string)

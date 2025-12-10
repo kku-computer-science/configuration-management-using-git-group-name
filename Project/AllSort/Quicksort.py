@@ -1,4 +1,4 @@
-from SortInterface import SortFact
+from .SortInterface import SortFact
 import numpy as np
 
 class Quicksort(SortFact):

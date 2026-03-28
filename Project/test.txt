@@ -1,0 +1,10 @@
+Quick
+10 5 3 7 1
+Bubble
+9 8 7 6 2
+Quick
+100 1 50 20 9
+Bubble
+3 3 2 1 0
+Quick
+7 1 9 4 2 6
